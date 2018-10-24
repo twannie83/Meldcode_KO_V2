@@ -22,7 +22,12 @@ namespace Meldcode_KO_V2.Views
 			//Setup url
 			var url = "https://meldcodekmko.nl/";
 			var newUrl = "";
-			newUrl = viewModel.Item.Text.ToString();
+
+			if (viewModel.Item.Text != null)
+			{
+				newUrl = viewModel.Item.Text.ToString();
+			}
+			
 
 			//URL binder
 			if (newUrl == "Noodsituatie")

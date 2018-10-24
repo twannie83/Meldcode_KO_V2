@@ -3,6 +3,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Meldcode_KO_V2.Views;
 
+using Meldcode_KO_V2.Models;
+using Meldcode_KO_V2.ViewModels;
+
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Meldcode_KO_V2
 {
@@ -12,7 +15,6 @@ namespace Meldcode_KO_V2
 		public App()
 		{
 			InitializeComponent();
-
 
 			MainPage = new MainPage();
 		}

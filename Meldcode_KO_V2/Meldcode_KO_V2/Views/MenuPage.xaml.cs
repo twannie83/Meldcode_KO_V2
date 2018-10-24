@@ -18,8 +18,8 @@ namespace Meldcode_KO_V2.Views
 
 			menuItems = new List<HomeMenuItem>
 			{
-				new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-				new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+				new HomeMenuItem {Id = MenuItemType.Browse, Title="Menu" },
+				new HomeMenuItem {Id = MenuItemType.About, Title="Over" }
 			};
 
 			ListViewMenu.ItemsSource = menuItems;

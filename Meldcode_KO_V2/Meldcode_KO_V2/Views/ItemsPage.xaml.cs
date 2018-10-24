@@ -42,12 +42,15 @@ namespace Meldcode_KO_V2.Views
 			await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
 		}
 
-		protected override void OnAppearing()
+		async protected override void OnAppearing()
 		{
 			base.OnAppearing();
 
 			if (viewModel.Items.Count == 0)
 				viewModel.LoadItemsCommand.Execute(null);
+
+			Item item = new Item();
+			await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 		}
 	}
 }

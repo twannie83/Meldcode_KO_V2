@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
+
 namespace Meldcode_KO_V2.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -18,6 +20,7 @@ namespace Meldcode_KO_V2.Views
 			MasterBehavior = MasterBehavior.Popover;
 
 			MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+
 		}
 
 		public async Task NavigateFromMenu(int id)
