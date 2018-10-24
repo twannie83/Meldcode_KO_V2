@@ -11,6 +11,7 @@ namespace Meldcode_KO_V2.ViewModels
 		{
 			Title = item?.Text;
 			Item = item;
+
 		}
 	}
 }
