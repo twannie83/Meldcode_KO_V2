@@ -42,11 +42,15 @@ namespace Meldcode_KO_V2.Views
 			{
 				url = "https://meldcodekmko.nl/scherm-0-fc2-vermoeden-van-misbruik-door-een-medewerker/";
 			}
+			else if (newUrl == "Download het protocol")
+			{
+				url = "https://meldcodekmko.nl/meldcodekmko.nl/wp-content/uploads/2018/10/MeldcodeKM.pdf";
+			}
 
 			//aanvullen met overige menu items
 
 
-				WebView webview = new WebView
+			WebView webview = new WebView
 			{
 				Source = url,
 				VerticalOptions = LayoutOptions.FillAndExpand
@@ -71,6 +75,11 @@ namespace Meldcode_KO_V2.Views
 
 			viewModel = new ItemDetailViewModel(item);
 			BindingContext = viewModel;
+		}
+
+		async void About_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new NavigationPage(new AboutPage()));
 		}
 	}
 }

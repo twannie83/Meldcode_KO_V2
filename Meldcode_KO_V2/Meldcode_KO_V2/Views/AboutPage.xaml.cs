@@ -12,5 +12,12 @@ namespace Meldcode_KO_V2.Views
 		{
 			InitializeComponent();
 		}
+
+		private void goToMainPageHandler(object sender, EventArgs e)
+		{
+			App.Current.MainPage = new MainPage();
+		}
+
 	}
+
 }

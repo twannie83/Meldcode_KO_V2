@@ -17,12 +17,15 @@ namespace Meldcode_KO_V2.Views
 	public partial class ItemsPage : ContentPage
 	{
 		ItemsViewModel viewModel;
+		public bool startup;
 
 		public ItemsPage()
 		{
 			InitializeComponent();
 
 			BindingContext = viewModel = new ItemsViewModel();
+			
+			startup = true;
 		}
 
 		async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -37,9 +40,9 @@ namespace Meldcode_KO_V2.Views
 			ItemsListView.SelectedItem = null;
 		}
 
-		async void AddItem_Clicked(object sender, EventArgs e)
+		async void About_Clicked(object sender, EventArgs e)
 		{
-			await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+			await Navigation.PushModalAsync(new NavigationPage(new AboutPage()));
 		}
 
 		async protected override void OnAppearing()
@@ -49,8 +52,13 @@ namespace Meldcode_KO_V2.Views
 			if (viewModel.Items.Count == 0)
 				viewModel.LoadItemsCommand.Execute(null);
 
+			//function for setting startpage on startup
+			if (startup == true)
+			{ 
 			Item item = new Item();
 			await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+			startup = false;
+			}
 		}
 	}
 }

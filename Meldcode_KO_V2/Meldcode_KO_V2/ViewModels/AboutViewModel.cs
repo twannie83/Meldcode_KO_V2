@@ -11,7 +11,7 @@ namespace Meldcode_KO_V2.ViewModels
 		{
 			Title = "About";
 
-			OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+			OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://meldcodekmko.nl")));
 		}
 
 		public ICommand OpenWebCommand { get; }

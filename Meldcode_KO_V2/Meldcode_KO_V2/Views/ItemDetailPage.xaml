@@ -10,6 +10,15 @@
         <Label Text="{Binding Item.Description}" FontSize="Small"/>
         <WebView x:Name="Browser" WidthRequest="1000" HeightRequest="1000" />
     </StackLayout> -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Over" Clicked="About_Clicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP" Value="add.png"/>
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <WebView x:Name="Browser" WidthRequest="1000" HeightRequest="1000" />
