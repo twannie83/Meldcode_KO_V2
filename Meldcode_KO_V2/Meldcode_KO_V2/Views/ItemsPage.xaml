@@ -15,6 +15,9 @@
     </ContentPage.ToolbarItems>
 
     <StackLayout>
+        <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+            <Image Source="logo_handje.png" VerticalOptions="Center" HeightRequest="64" />
+        </ContentView>
         <ListView x:Name="ItemsListView"
                 ItemsSource="{Binding Items}"
                 VerticalOptions="FillAndExpand"
