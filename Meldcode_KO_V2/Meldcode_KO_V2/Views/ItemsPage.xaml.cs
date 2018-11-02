@@ -60,5 +60,19 @@ namespace Meldcode_KO_V2.Views
 			startup = false;
 			}
 		}
+
+		/*Bind onClick image to menu url*/
+		async void OnImageNameTapped(object sender, EventArgs args)
+		{
+			try
+			{
+				var item = new Item();
+				await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
 	}
 }

@@ -21,7 +21,7 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <WebView x:Name="Browser" WidthRequest="1000" HeightRequest="1000" />
+            <WebView x:Name="Browser" WidthRequest="1000" HeightRequest="1000" Navigating="OnNavigating" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -44,7 +44,7 @@ namespace Meldcode_KO_V2.Views
 			}
 			else if (newUrl == "Download het protocol")
 			{
-				url = "https://meldcodekmko.nl/meldcodekmko.nl/wp-content/uploads/2018/10/MeldcodeKM.pdf";
+				url = "https://meldcodekmko.nl/protocol-downloaden/";
 			}
 
 			//aanvullen met overige menu items
@@ -80,6 +80,21 @@ namespace Meldcode_KO_V2.Views
 		async void About_Clicked(object sender, EventArgs e)
 		{
 			await Navigation.PushModalAsync(new NavigationPage(new AboutPage()));
+		}
+
+		/*function for formatting URL en use tel and mailto in url*/
+		private void OnNavigating(object sender, WebNavigatingEventArgs e)
+		{
+			if (e.Url.ToLower().Contains("tel:"))
+			{
+				e.Cancel = true;
+				var uri = new Uri(e.Url);
+				Device.OpenUri(uri);
+			}
+			else
+			{
+				e.Cancel = false;
+			}
 		}
 	}
 }

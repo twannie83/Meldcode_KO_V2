@@ -159,6 +159,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\logo_handje.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo_zitten.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\Meldcode_KO_V2\Meldcode_KO_V2.projitems" Label="Shared" />
 </Project>
