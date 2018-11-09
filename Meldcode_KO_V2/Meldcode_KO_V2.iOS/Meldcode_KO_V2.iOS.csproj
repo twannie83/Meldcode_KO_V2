@@ -58,7 +58,7 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>
     </CodesignEntitlements>
-    <CodesignProvision>VS: com.casasolutions.meldcodeko Development</CodesignProvision>
+    <CodesignProvision>VS: com.casasolutions.meldcodeko.v2 Development</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <MtouchProfiling>true</MtouchProfiling>
@@ -71,8 +71,16 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+    <MtouchProfiling>false</MtouchProfiling>
+    <MtouchDebug>false</MtouchDebug>
+    <OptimizePNGs>true</OptimizePNGs>
+    <CodesignProvision>Release profile meldcodeko v2</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
@@ -97,7 +105,7 @@
     <BundleResource Include="Resources\xamarin_logo.png" />
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024x1024.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
@@ -124,10 +132,10 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60X60@2.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60x60@21.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60X60@3.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60x60@31.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
@@ -155,9 +163,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\logo_handje.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\logo_zitten.jpg" />
