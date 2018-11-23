@@ -42,19 +42,37 @@ namespace Meldcode_KO_V2.Views
 			{
 				url = "https://meldcodekmko.nl/scherm-0-fc2-vermoeden-van-misbruik-door-een-medewerker/";
 			}
+			else if (newUrl == "Seksueel misbruik")
+			{
+				url = "https://meldcodekmko.nl/fc3-scherm-1-grensoverschrijdend-gedrag/";
+			}
 			else if (newUrl == "Download het protocol")
 			{
 				url = "https://meldcodekmko.nl/protocol-downloaden/";
 			}
+			else if (newUrl == "Informatie")
+			{
+				url = "https://meldcodekmko.nl/fc4-scherm-1-informatie/";
+			}
+			else if (newUrl == "FAQ")
+			{
+				url = "https://meldcodekmko.nl/fc5-scherm-1-faq/";
+			}
+			else if (newUrl == "Veilig Thuis")
+			{
+				url = "https://meldcodekmko.nl/noodsituatie/";
+			}
 
-			//aanvullen met overige menu items
+
 
 
 			WebView webview = new WebView
+	
 			{
 				Source = url,
 				VerticalOptions = LayoutOptions.FillAndExpand
 			};
+
 			this.Content = new StackLayout
 			{
 				Children = {
@@ -96,5 +114,6 @@ namespace Meldcode_KO_V2.Views
 				e.Cancel = false;
 			}
 		}
+
 	}
 }

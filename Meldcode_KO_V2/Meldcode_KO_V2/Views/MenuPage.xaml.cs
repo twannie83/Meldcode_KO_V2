@@ -18,7 +18,6 @@ namespace Meldcode_KO_V2.Views
 
 			menuItems = new List<HomeMenuItem>
 			{
-				new HomeMenuItem {Id = MenuItemType.Browse, Title="Kiekeboe Easter Egg!!!" },
 				new HomeMenuItem {Id = MenuItemType.About, Title="Over" }
 			};
 

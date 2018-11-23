@@ -131,6 +131,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\logo_zitten.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo_app_meldcodekm.png" />
+  </ItemGroup>
   <Import Project="..\Meldcode_KO_V2\Meldcode_KO_V2.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

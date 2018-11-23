@@ -22,7 +22,8 @@ namespace Meldcode_KO_V2.Services
 				new Item { Id = Guid.NewGuid().ToString(), Text = "Seksueel misbruik", Description="kinderen onderling" },
 				new Item { Id = Guid.NewGuid().ToString(), Text = "Download het protocol", Description="" },
 				new Item { Id = Guid.NewGuid().ToString(), Text = "Informatie", Description="" },
-				new Item { Id = Guid.NewGuid().ToString(), Text = "FAQ", Description="" }
+				new Item { Id = Guid.NewGuid().ToString(), Text = "FAQ", Description="" },
+				new Item { Id = Guid.NewGuid().ToString(), Text = "Veilig Thuis", Description="" }
 			};
 
 			foreach (var item in mockItems)

@@ -16,7 +16,7 @@
 
     <StackLayout>
         <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-            <Image Source="logo_zitten.jpg" VerticalOptions="Center" HeightRequest="100">
+            <Image Source="logo_app_meldcodekm.png" VerticalOptions="Center" HeightRequest="100">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer
                     Tapped="OnImageNameTapped"

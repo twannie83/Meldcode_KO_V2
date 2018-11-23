@@ -11,7 +11,23 @@ namespace Meldcode_KO_V2.Views
 		public AboutPage()
 		{
 			InitializeComponent();
+
+
+			WebView webview = new WebView
+
+			{
+				Source = "https://meldcodekmko.nl/about/" ,
+				VerticalOptions = LayoutOptions.FillAndExpand
+			};
+
+			this.Content = new StackLayout
+			{
+				Children = {
+					 webview
+				}
+			};
 		}
+	
 
 		private void goToMainPageHandler(object sender, EventArgs e)
 		{
